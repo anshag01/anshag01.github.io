@@ -319,31 +319,6 @@ section {
 
 /* Projects */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 24px;
-}
-
-.project-card {
-    background: var(--bg-card);
-    border-radius: 8px;
-    padding: 32px;
-    border-top: 3px solid transparent;
-    transition: all 0.2s;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.project-card:hover {
-    border-top-color: var(--accent);
-    transform: translateY(-5px);
-}
-
-.project-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
     margin-bottom: 16px;
 }
 
