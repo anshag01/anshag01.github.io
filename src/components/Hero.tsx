@@ -82,7 +82,7 @@ export const Hero = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="order-1 lg:order-2 flex justify-center lg:justify-end"
+            className="order-1 lg:order-2 flex justify-center lg:justify-center"
           >
             <div className="relative">
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl" />
