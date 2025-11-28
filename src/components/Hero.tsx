@@ -87,9 +87,11 @@ export const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl" />
               <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-primary/50 shadow-2xl">
-                <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center">
-                  <span className="text-6xl lg:text-7xl font-bold text-primary">AA</span>
-                </div>
+                <img
+                  src="/Ansh.jpg"
+                  alt="Ansh Agrawal"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </motion.div>
