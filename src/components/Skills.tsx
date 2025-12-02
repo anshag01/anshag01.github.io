@@ -54,25 +54,25 @@ export const Skills = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 gap-12"
+          className="grid gap-12"
         >
           {skills.map((skill) => (
             <motion.div
               key={skill.title}
               variants={item}
-              className="space-y-4"
+              className="space-y-6"
             >
-              <h3 className="text-xl font-bold text-foreground border-b border-border pb-2">
+              <h3 className="text-xl font-bold text-foreground flex items-center gap-3">
+                <span className="w-8 h-1 bg-primary rounded-full"></span>
                 {skill.title}
               </h3>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-3">
                 {skill.items.map((tech) => (
                   <span
                     key={tech}
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="px-4 py-2 bg-secondary/50 hover:bg-secondary text-secondary-foreground rounded-full text-sm font-medium transition-colors border border-border/50"
                   >
                     {tech}
-                    <span className="mx-2 text-border last:hidden">/</span>
                   </span>
                 ))}
               </div>
