@@ -17,7 +17,7 @@ const experiences = [
     title: "Software Engineering Intern",
     description: "I resolved 20 production issues & migrated C# backend services, improving platform stability by 15% and ensuring 98% on-time delivery for monthly releases.",
     tags: ["C#", ".NET", "SQL Server", "AWS", "Datadog"],
-    logo: "https://logo.clearbit.com/thomsonreuters.com",
+    logo: "/thomson_reuters_logo.png",
   },
   {
     date: "09/2024 – 04/2025",

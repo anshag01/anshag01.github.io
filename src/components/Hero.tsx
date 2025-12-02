@@ -13,12 +13,12 @@ export const Hero = () => {
   return (
     <section id="about" className="min-h-[80vh] flex items-center justify-center py-12 lg:py-20 relative overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-12">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-12 lg:gap-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex-1 text-center lg:text-left"
+            className="flex-1 text-center lg:text-left max-w-2xl"
           >
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -42,7 +42,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0"
+              className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed"
             >
               Machine Learning & Software Engineering student at UofT. <br className="hidden md:block" />
               Building intelligent systems and scalable software.
@@ -80,13 +80,13 @@ export const Hero = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 flex-shrink-0"
+            className="relative w-64 h-64 md:w-80 md:h-80 flex-shrink-0"
           >
-            <div className="absolute inset-0 bg-foreground/5 rounded-full blur-3xl" />
+            <div className="absolute inset-0 bg-primary/10 rounded-full blur-3xl" />
             <img
               src="/Ansh.jpg"
               alt="Ansh Agrawal"
-              className="w-full h-full object-cover rounded-full border-2 border-border/50 shadow-2xl relative z-10"
+              className="w-full h-full object-cover rounded-full border-4 border-background shadow-2xl relative z-10"
             />
           </motion.div>
         </div>
