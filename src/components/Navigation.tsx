@@ -4,9 +4,10 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
   { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
+  { label: "Research", href: "#research" },
   { label: "Projects", href: "#projects" },
+  { label: "Skills", href: "#skills" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -51,8 +52,8 @@ export const Navigation = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-          ? "bg-background/95 backdrop-blur-md border-b border-border shadow-lg"
-          : "bg-transparent"
+        ? "bg-background/95 backdrop-blur-md border-b border-border shadow-lg"
+        : "bg-transparent"
         }`}
     >
       <div className="container mx-auto px-6">
@@ -81,8 +82,8 @@ export const Navigation = () => {
                   handleClick(item.href);
                 }}
                 className={`text-sm font-medium transition-colors relative ${activeSection === item.href.substring(1)
-                    ? "text-primary"
-                    : "text-muted-foreground hover:text-foreground"
+                  ? "text-primary"
+                  : "text-muted-foreground hover:text-foreground"
                   }`}
               >
                 {item.label}
@@ -127,8 +128,8 @@ export const Navigation = () => {
                     handleClick(item.href);
                   }}
                   className={`text-base font-medium transition-colors ${activeSection === item.href.substring(1)
-                      ? "text-primary"
-                      : "text-muted-foreground hover:text-foreground"
+                    ? "text-primary"
+                    : "text-muted-foreground hover:text-foreground"
                     }`}
                 >
                   {item.label}

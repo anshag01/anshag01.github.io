@@ -2,12 +2,8 @@ import { motion } from "framer-motion";
 
 const skills = [
   {
-    title: "Languages",
-    items: ["Python", "C#", "Java", "C", "SQL", "JavaScript"],
-  },
-  {
-    title: "Frameworks",
-    items: ["Spring Boot", ".NET (Core)", "Angular"],
+    title: "Languages & Frameworks",
+    items: ["Python", "C#", "Java", "C", "SQL", "JavaScript", "Spring Boot", ".NET (Core)", "Angular"],
   },
   {
     title: "Tools",
