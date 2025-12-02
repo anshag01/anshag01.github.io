@@ -39,12 +39,12 @@ const projects = [
     video: "https://www.youtube.com/embed/tiZf6THqHrw",
   },
   {
-    title: "Definition Finder",
-    date: "04/2024",
+    title: "Essay Generator",
+    date: "02/2021",
     description:
-      "Context-aware definition tool that helps users understand complex terms in real-time. Won DeerHacks for best educational hack.",
-    tags: ["DeerHacks Winner", "Python", "NLP"],
-    link: "https://devpost.com/software/definiton-finder",
+      "Automated research tool using UiPath to scrape Wikipedia for definitions and Google News for relevant headlines. Won 2nd Place for Best Usage of UiPath Products at DeerHacks.",
+    tags: ["DeerHacks Winner", "UiPath", "Python", "Flask", "Automation"],
+    link: "https://devpost.com/software/essay-generator-86502",
     video: "https://www.youtube.com/embed/stWTJUYMcjc",
   },
 ];
