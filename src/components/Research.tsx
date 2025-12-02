@@ -6,7 +6,7 @@ const research = [
         lab: "The Matter Lab at UofT",
         date: "12/2024 – 03/2025",
         description: "Built a PySCF based workflow for a machine-learning exchange–correlation functional by extracting one & two-particle Reduced Density Matrices from CCSD calculations. Mapped orbitals to grids & derived the exchange-correlation hole hxc from pair & electron densities. Added automated checks enforcing physical sum rules so the data stayed consistent with first-principles DFT.",
-        logo: "https://matter.toronto.edu/wp-content/uploads/2020/08/MatterLab-Logo-1.png",
+        logo: "/matter_lab_logo.png",
     },
     {
         role: "LLM Robotics Researcher",

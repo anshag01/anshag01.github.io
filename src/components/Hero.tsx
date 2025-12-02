@@ -13,7 +13,7 @@ export const Hero = () => {
   return (
     <section id="about" className="min-h-[80vh] flex items-center justify-center py-12 lg:py-20 relative overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

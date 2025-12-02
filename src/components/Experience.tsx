@@ -65,7 +65,7 @@ const item = {
 
 export const Experience = () => {
   return (
-    <section id="experience" className="py-12 lg:py-20 bg-secondary/30">
+    <section id="experience" className="py-20 lg:py-32 bg-secondary/30">
       <div className="container mx-auto px-6 max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -74,7 +74,7 @@ export const Experience = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl lg:text-4xl font-bold mb-12 tracking-tight text-foreground">
-            Software Engineering
+            Internships
           </h2>
         </motion.div>
 
