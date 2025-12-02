@@ -11,7 +11,7 @@ export const Hero = () => {
   };
 
   return (
-    <section id="about" className="min-h-[80vh] flex items-center pt-20">
+    <section id="about" className="min-h-[80vh] flex items-center justify-center py-12 lg:py-20 relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
           <motion.div

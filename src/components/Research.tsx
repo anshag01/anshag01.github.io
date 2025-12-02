@@ -5,13 +5,16 @@ const research = [
         role: "Machine Learning Researcher",
         lab: "The Matter Lab at UofT",
         date: "12/2024 – 03/2025",
-        description: "Built PySCF workflow for ML exchange–correlation functional by extracting Reduced Density Matrices from CCSD calculations.",
+        description: "Built a PySCF based workflow for a machine-learning exchange–correlation functional by extracting one & two-particle Reduced Density Matrices from CCSD calculations. Mapped orbitals to grids & derived the exchange-correlation hole hxc from pair & electron densities. Added automated checks enforcing physical sum rules so the data stayed consistent with first-principles DFT.",
+        logo: "https://matter.toronto.edu/wp-content/uploads/2020/08/MatterLab-Logo-1.png",
     },
     {
         role: "LLM Robotics Researcher",
         lab: "MEDCVR at UofT",
         date: "08/2024 – 03/2025",
-        description: "Designed multi-agent robotics app with VLMs & LLMs for autonomous surgical tasks, deployed on Franka Emika robot.",
+        description: "Designed a multi-agent robotics application with VLMs & LLMs for autonomous surgical tasks. Developed high-level motion planning, low-level action functions & deployed code on Franka Emika robot.",
+        logo: "https://logo.clearbit.com/utoronto.ca",
+        video: "https://www.youtube.com/embed/_fb3TfBmiVc",
     },
 ];
 
@@ -40,7 +43,7 @@ const item = {
 
 export const Research = () => {
     return (
-        <section id="research" className="py-20 lg:py-32">
+        <section id="research" className="py-12 lg:py-20">
             <div className="container mx-auto px-6 max-w-4xl">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -71,15 +74,35 @@ export const Research = () => {
                                             {exp.date}
                                         </div>
                                         <div>
-                                            <h4 className="text-xl font-bold text-foreground mb-1 group-hover:text-primary transition-colors">
-                                                {exp.lab}
-                                            </h4>
+                                            <div className="flex items-center gap-3 mb-1">
+                                                {exp.logo && (
+                                                    <img
+                                                        src={exp.logo}
+                                                        alt={`${exp.lab} logo`}
+                                                        className="w-8 h-8 object-contain rounded-sm bg-white p-0.5"
+                                                    />
+                                                )}
+                                                <h4 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                                                    {exp.lab}
+                                                </h4>
+                                            </div>
                                             <div className="text-lg text-muted-foreground mb-2">
                                                 {exp.role}
                                             </div>
-                                            <p className="text-muted-foreground/80 leading-relaxed">
+                                            <p className="text-muted-foreground/80 leading-relaxed mb-4">
                                                 {exp.description}
                                             </p>
+                                            {exp.video && (
+                                                <div className="aspect-video w-full max-w-md mt-4 rounded-lg overflow-hidden border border-border/50">
+                                                    <iframe
+                                                        src={exp.video}
+                                                        title="Research Video"
+                                                        className="w-full h-full"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowFullScreen
+                                                    />
+                                                </div>
+                                            )}
                                         </div>
                                     </div>
                                 </motion.div>

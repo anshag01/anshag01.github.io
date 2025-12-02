@@ -6,7 +6,7 @@ const projects = [
     title: "Aegis",
     date: "02/2025",
     description:
-      "Built a multimodal edge-ML system using Apple Watch & Terra biometrics with NVIDIA Jetson–deployed VILA models to infer firefighters’ state.",
+      "Built a multimodal edge-ML system using Apple Watch & Terra biometrics with NVIDIA Jetson–deployed VILA models to infer firefighters’ state & trigger actuator-controlled medication.",
     tags: ["NVIDIA Jetson", "VILA", "Multimodal ML", "IoT"],
     link: "https://devpost.com/software/aegis-kz4qnm",
     image: "/aegis_project.png",
@@ -15,7 +15,7 @@ const projects = [
     title: "ReCall.ai",
     date: "12/2024",
     description:
-      "Smart glasses using facial recognition & LLMs to identify partners and summarize interactions. Won Patient Safety Challenge.",
+      "Built smart glasses that use facial recognition to identify conversation partners & LLMs to summarize past interactions with them. Won the Patient Safety Challenge & Diagnosis Consort among 100 teams.",
     tags: ["HackPrinceton Winner", "FastAPI", "Next.js", "Gemini"],
     link: "https://dorahacks.io/buidl/19381",
     video: "https://www.youtube.com/embed/dxmZnS_8mQE",
@@ -24,7 +24,7 @@ const projects = [
     title: "Watchful.AI",
     date: "09/2024",
     description:
-      "AI safety system using CLIP, VLMs & Vector DB to analyze CCTV feeds for threats in real-time. Won Best Privacy/Security Hack.",
+      "Developed an AI safety system using CLIP, VLMs, & a vector database to analyze CCTV feeds for weapon-related threats & alert campus security in real time. Won Best Privacy/Security Hack & Most Technically Complex Hack among 104 teams.",
     tags: ["PennApps Winner", "CLIP", "Vector DB", "FastAPI"],
     link: "https://devpost.com/software/watchful-ai-u5id0v",
     video: "https://www.youtube.com/embed/ke7UuqB-MVk",
@@ -66,7 +66,7 @@ const item = {
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-20 lg:py-32">
+    <section id="projects" className="py-12 lg:py-20 bg-secondary/30">
       <div className="container mx-auto px-6 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

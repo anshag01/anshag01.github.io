@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
@@ -7,40 +6,45 @@ const experiences = [
     company: "Autodesk",
     location: "Toronto, Canada",
     title: "Machine Learning Intern",
-    description: "Built agentic chatbot planning multi-step workflows, delivering 90% accuracy & $6.7M/year projected savings.",
+    description: "Built an agentic chatbot for software-package management that plans multi-step workflows (create, edit, find, & delete) & orchestrates cross-service tool calls, delivering 90% action accuracy & $6.7M/year projected customer savings at rollout. Implemented RAG-powered semantic search for find feature across 1000+ package configs with 10× faster lookups. Added JWT feature flag to switch between hard-coded roles & 3-legged token, enabling safe staged migration.",
     tags: ["Python", "RASA", "Transformers", "ChromaDB", "Docker", "AWS"],
+    logo: "https://logo.clearbit.com/autodesk.com",
   },
   {
     date: "09/2024 – 04/2025",
     company: "Thomson Reuters",
     location: "Toronto, Canada",
     title: "Software Engineering Intern",
-    description: "Resolved 20 production issues & migrated C# services, improving platform stability by 15%.",
+    description: "Resolved 20 production issues & migrated C# backend services, improving platform stability by 15%. Managed monthly releases, cherry-picking cross-functional changes, ensuring 98% on-time delivery. Developed 25 SQL scripts to fix bugs & deliver features for 20,000 customers across seven environments.",
     tags: ["C#", ".NET", "SQL Server", "AWS", "Datadog"],
-  },
-  {
-    date: "05/2024 – 08/2024",
-    company: "TD Bank",
-    location: "Toronto, Canada",
-    title: "Software Engineering Intern",
-    description: "Built 'Maintain Holiday' page & authored Selenium scripts, cutting test time by 500% ($25k/yr savings).",
-    tags: ["Spring Boot", "Angular", "SQL", "Selenium"],
-  },
-  {
-    date: "05/2023 – 08/2023",
-    company: "Nokia",
-    location: "Toronto, Canada",
-    title: "Software Engineering Intern",
-    description: "Implemented iSIM features for 100M users & patched 7 critical security flaws, boosting stability by 5%.",
-    tags: ["Java", "Docker", "Kubernetes", "REST APIs"],
+    logo: "https://logo.clearbit.com/thomsonreuters.com",
   },
   {
     date: "09/2024 – 04/2025",
     company: "University of Toronto",
     location: "Toronto, Canada",
     title: "Teaching Assistant",
-    description: "TAed CSC207 & CSC209, supporting 500+ students & reducing grading time by 50% with new test suites.",
+    description: "TAed CSC207 (Software Design) & CSC209 (Systems Programming); supported 500+ students through labs, grading, & office hours. Created adventure game 2 assignment for CSC207 & test suite, reducing grading time by 50%.",
     tags: ["Java", "C", "JUnit", "Teaching"],
+    logo: "https://logo.clearbit.com/utoronto.ca",
+  },
+  {
+    date: "05/2024 – 08/2024",
+    company: "TD Bank",
+    location: "Toronto, Canada",
+    title: "Software Engineering Intern",
+    description: "Built “Maintain Holiday” webpage for Registered Products Database using Spring Boot & Angular. Authored Selenium-based regression scripts, cutting test time by 500% & providing $25,000/year savings.",
+    tags: ["Spring Boot", "Angular", "SQL", "Selenium"],
+    logo: "https://logo.clearbit.com/td.com",
+  },
+  {
+    date: "05/2023 – 08/2023",
+    company: "Nokia",
+    location: "Toronto, Canada",
+    title: "Software Engineering Intern",
+    description: "Implemented & tested iSIM features in Java, enabling Airtel to monitor 100 million users. Resolved 100 code issues & 7 critical security flaws, boosting performance & stability by 5%.",
+    tags: ["Java", "Docker", "Kubernetes", "REST APIs"],
+    logo: "https://logo.clearbit.com/nokia.com",
   },
 ];
 
@@ -61,7 +65,7 @@ const item = {
 
 export const Experience = () => {
   return (
-    <section id="experience" className="py-20 lg:py-32">
+    <section id="experience" className="py-12 lg:py-20 bg-secondary/30">
       <div className="container mx-auto px-6 max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -95,9 +99,18 @@ export const Experience = () => {
 
                 {/* Content */}
                 <div>
-                  <h3 className="text-xl font-bold text-foreground mb-1 group-hover:text-primary transition-colors">
-                    {exp.company}
-                  </h3>
+                  <div className="flex items-center gap-3 mb-1">
+                    {exp.logo && (
+                      <img
+                        src={exp.logo}
+                        alt={`${exp.company} logo`}
+                        className="w-8 h-8 object-contain rounded-sm bg-white p-0.5"
+                      />
+                    )}
+                    <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                      {exp.company}
+                    </h3>
+                  </div>
                   <div className="text-lg text-muted-foreground mb-2">
                     {exp.title}
                   </div>
