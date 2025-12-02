@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import { Tweet } from "react-tweet";
 
 const projects = [
   {
@@ -9,7 +10,7 @@ const projects = [
       "Built a multimodal edge-ML system using Apple Watch & Terra biometrics with NVIDIA Jetson–deployed VILA models to infer firefighters’ state & trigger actuator-controlled medication.",
     tags: ["NVIDIA Jetson", "VILA", "Multimodal ML", "IoT"],
     link: "https://devpost.com/software/aegis-kz4qnm",
-    image: "/aegis_project.png",
+    tweetId: "1891811334381003235",
   },
   {
     title: "ReCall.ai",
@@ -93,7 +94,7 @@ export const Projects = () => {
               className="group flex flex-col h-full bg-secondary/20 rounded-lg overflow-hidden hover:bg-secondary/40 transition-colors duration-300"
             >
               {/* Media Section */}
-              <div className="aspect-video w-full bg-black/50 overflow-hidden">
+              <div className={`w-full bg-black/50 overflow-hidden ${project.tweetId ? "" : "aspect-video"}`}>
                 {project.video ? (
                   <iframe
                     src={project.video}
@@ -102,6 +103,12 @@ export const Projects = () => {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   />
+                ) : project.tweetId ? (
+                  <div className="w-full flex justify-center bg-background py-4">
+                    <div className="w-full max-w-[300px]">
+                      <Tweet id={project.tweetId} />
+                    </div>
+                  </div>
                 ) : project.image ? (
                   <img
                     src={project.image}
