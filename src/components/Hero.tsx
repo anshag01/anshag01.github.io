@@ -69,7 +69,7 @@ export const Hero = () => {
                 asChild
                 className="border-border hover:bg-secondary font-semibold"
               >
-                <a href="/Resume_Ansh_Agrawal.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="/Grad_CV_Ansh_Agrawal.pdf" target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2 h-5 w-5" />
                   Download CV
                 </a>

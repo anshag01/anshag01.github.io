@@ -50,7 +50,7 @@ export const Skills = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl lg:text-4xl font-bold mb-3 border-l-4 border-primary pl-6">
-            Technical Arsenal
+            Technical Skills
           </h2>
           <p className="text-muted-foreground mb-12 pl-6 max-w-2xl">
             Technologies and tools I use to bring ideas to life
