@@ -74,7 +74,7 @@ export const Experience = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl lg:text-4xl font-bold mb-12 tracking-tight text-foreground">
-            Experience
+            Work Experience
           </h2>
         </motion.div>
 
