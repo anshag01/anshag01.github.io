@@ -18,7 +18,7 @@ export const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      setScrolled(window.scrollY > 50);
 
       const sections = navItems.map((item) => item.href.substring(1));
       const currentSection = sections.find((section) => {

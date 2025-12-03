@@ -1,8 +1,21 @@
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Download, Mail } from "lucide-react";
 
+const roles = ["Builder", "Developer", "Researcher"];
+
 export const Hero = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % roles.length);
+    }, 3000); // Change every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   const handleContact = () => {
     const element = document.querySelector("#contact");
     if (element) {
@@ -10,8 +23,11 @@ export const Hero = () => {
     }
   };
 
+  const currentRole = roles[index];
+  const article = currentRole === "ML Engineer" ? "an" : "a";
+
   return (
-    <section id="about" className="min-h-[80vh] flex items-center justify-center py-12 lg:py-20 relative overflow-hidden">
+    <section id="about" className="min-h-screen flex items-center justify-center py-12 lg:py-20 relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-12 lg:gap-24">
           <motion.div
@@ -20,14 +36,28 @@ export const Hero = () => {
             transition={{ duration: 0.6 }}
             className="flex-1 text-center lg:text-left max-w-2xl"
           >
-            <motion.span
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-xl md:text-2xl text-muted-foreground mb-4 block"
+              className="text-xl md:text-2xl text-muted-foreground mb-4 flex items-center justify-center lg:justify-start gap-2 h-8"
             >
-              Hi, I'm
-            </motion.span>
+              <span>Hi, I'm {article}</span>
+              <div className="relative w-40 h-full text-left">
+                <AnimatePresence mode="wait">
+                  <motion.span
+                    key={currentRole}
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: -20, opacity: 0 }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                    className="absolute top-0 left-0 font-semibold text-foreground"
+                  >
+                    {currentRole}
+                  </motion.span>
+                </AnimatePresence>
+              </div>
+            </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -44,8 +74,8 @@ export const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed"
             >
-              Machine Learning & Software Engineering student at UofT. <br className="hidden md:block" />
-              Building intelligent systems and scalable software.
+              Final Year CS @ UofT <br className="hidden md:block" />
+              I build ML models and scalable backend systems.
             </motion.p>
 
             <motion.div
