@@ -16,7 +16,7 @@ const projects = [
     date: "12/2024",
     description:
       "Built smart glasses that use facial recognition to identify conversation partners & LLMs to summarize past interactions with them. Won the Patient Safety Challenge & Diagnosis Consort among 100 teams.",
-    tags: ["HackPrinceton Winner", "FastAPI", "Next.js", "Gemini"],
+    tags: ["HackPrinceton Winner", "FastAPI", "Next.js", "Gemini", "Computer Vision", "IoT"],
     link: "https://dorahacks.io/buidl/19381",
     video: "https://www.youtube.com/embed/dxmZnS_8mQE",
   },
@@ -25,26 +25,26 @@ const projects = [
     date: "09/2024",
     description:
       "Developed an AI safety system using CLIP, VLMs, & a vector database to analyze CCTV feeds for weapon-related threats & alert campus security in real time. Won Best Privacy/Security Hack & Most Technically Complex Hack among 104 teams.",
-    tags: ["PennApps Winner", "CLIP", "Vector DB", "FastAPI"],
+    tags: ["PennApps Winner", "CLIP", "Vector DB", "FastAPI", "Computer Vision", "VLM"],
     link: "https://devpost.com/software/watchful-ai-u5id0v",
     video: "https://www.youtube.com/embed/ke7UuqB-MVk",
   },
   {
     title: "Platemate",
-    date: "09/2023",
+    date: "01/2023",
     description:
-      "Meal-sharing AI app using Cohere's LLM API to extract preferences & generate match recommendations. Won sponsor challenge at UofTHacks X.",
-    tags: ["UofTHacks Winner", "Python", "Cohere API", "React Native"],
+      "A networking platform connecting people over food. Uses Cohere's LLMs to match users based on preferences and Google Maps API to suggest nearby restaurants within budget. Won Best Build with Cohere Challenge at UofTHacks X among 90 teams.",
+    tags: ["UofTHacks Winner", "Cohere", "Google Maps", "Express.js", "Firebase"],
     link: "https://devpost.com/software/platemate",
     video: "https://www.youtube.com/embed/tiZf6THqHrw",
   },
   {
     title: "Essay Generator",
-    date: "02/2021",
+    date: "05/2022",
     description:
-      "Automated research tool using UiPath to scrape Wikipedia for definitions and Google News for relevant headlines. Won 2nd Place for Best Usage of UiPath Products at DeerHacks.",
-    tags: ["DeerHacks Winner", "UiPath", "Python", "Flask", "Automation"],
-    link: "https://devpost.com/software/essay-generator-86502",
+      "Automated research assistant using UiPath to scrape Wikipedia definitions and Google News headlines to jumpstart the writing process. Won Best Usage of UiPath Products at DeerHacks among 38 teams.",
+    tags: ["DeerHacks Winner", "UiPath", "Python", "Flask", "Google News"],
+    link: "https://devpost.com/software/definiton-finder",
     video: "https://www.youtube.com/embed/stWTJUYMcjc",
   },
 ];

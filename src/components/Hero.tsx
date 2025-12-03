@@ -28,7 +28,10 @@ export const Hero = () => {
 
   return (
     <section id="about" className="min-h-screen flex items-center justify-center py-12 lg:py-20 relative overflow-hidden">
-      <div className="container mx-auto px-6">
+      {/* Background Gradient Blob */}
+      <div className="absolute top-[-20%] right-[-10%] w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] animate-pulse" />
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-12 lg:gap-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

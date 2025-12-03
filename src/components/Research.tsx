@@ -141,13 +141,13 @@ export const Research = () => {
                                     variants={item}
                                     className="group relative pl-4 border-l-2 border-border/50 hover:border-primary transition-colors"
                                 >
-                                    <p className="text-base font-bold text-foreground group-hover:text-primary transition-colors mb-1">
+                                    <p className="text-lg font-bold text-foreground group-hover:text-primary transition-colors mb-1">
                                         {pub.title}
                                     </p>
-                                    <p className="text-sm text-muted-foreground">
+                                    <p className="text-base text-muted-foreground">
                                         {pub.authors}
                                     </p>
-                                    <p className="text-xs font-mono text-primary/60 mt-1">
+                                    <p className="text-sm font-mono text-primary/60 mt-1">
                                         {pub.venue}
                                     </p>
                                 </motion.div>
