@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Download, Mail } from "lucide-react";
+import { Download, Mail, Github, Twitter, Hexagon } from "lucide-react";
 
 const roles = ["Builder", "Developer", "Researcher"];
 
@@ -106,6 +106,38 @@ export const Hero = () => {
                   Download CV
                 </a>
               </Button>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 }}
+              className="flex gap-6 mt-12 justify-center lg:justify-start"
+            >
+              <a
+                href="https://github.com/anshag01"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Github className="w-8 h-8" />
+              </a>
+              <a
+                href="https://x.com/anshag01"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Twitter className="w-8 h-8" />
+              </a>
+              <a
+                href="https://devpost.com/anshagrawal"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Hexagon className="w-8 h-8" />
+              </a>
             </motion.div>
           </motion.div>
 
