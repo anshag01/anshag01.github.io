@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Trophy } from "lucide-react";
 
 const projects = [
   {
@@ -34,7 +34,7 @@ const projects = [
     date: "09/2023",
     description:
       "Meal-sharing AI app using Cohere's LLM API to extract preferences & generate match recommendations. Won sponsor challenge at UofTHacks X.",
-    tags: ["UofTHacks X Winner", "Python", "Cohere API", "React Native"],
+    tags: ["UofTHacks Winner", "Python", "Cohere API", "React Native"],
     link: "https://devpost.com/software/platemate",
     video: "https://www.youtube.com/embed/tiZf6THqHrw",
   },
@@ -84,16 +84,22 @@ export const Projects = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {projects.map((project) => (
             <motion.div
               key={project.title}
               variants={item}
-              className="group flex flex-col h-full bg-secondary/20 rounded-lg overflow-hidden hover:bg-secondary/40 transition-colors duration-300"
+              className="group flex flex-col h-full rounded-xl bg-card/50 border border-border/50 hover:border-primary/50 transition-colors duration-300 hover:shadow-lg hover:shadow-primary/5 overflow-hidden"
             >
               {/* Media Section */}
-              <div className="aspect-video w-full bg-black/50 overflow-hidden">
+              <div className="aspect-video w-full bg-black/50 overflow-hidden relative">
+                {project.tags.find(tag => tag.includes("Winner")) && (
+                  <div className="absolute top-[25px] -left-[45px] w-[180px] -rotate-[35deg] bg-[#FFD700] text-black text-[9px] font-bold uppercase tracking-wider flex items-center justify-center gap-1 py-1 shadow-md z-10">
+                    <span>{project.tags.find(tag => tag.includes("Winner"))?.replace(" Winner", "")}</span>
+                    <Trophy className="w-3 h-3" />
+                  </div>
+                )}
                 {project.video ? (
                   <iframe
                     src={project.video}
@@ -119,28 +125,29 @@ export const Projects = () => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col p-6 flex-grow"
+                className="flex flex-col p-5 flex-grow"
               >
-                <div className="flex items-start justify-between mb-4">
+                <div className="flex items-start justify-between mb-2">
                   <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
-                  <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-mono text-muted-foreground whitespace-nowrap">
+                      {project.date}
+                    </span>
+                    <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                  </div>
                 </div>
 
-                <div className="text-sm font-mono text-muted-foreground mb-4">
-                  {project.date}
-                </div>
-
-                <p className="text-muted-foreground mb-6 flex-grow leading-relaxed">
+                <p className="text-muted-foreground mb-4 flex-grow leading-relaxed text-sm line-clamp-5">
                   {project.description}
                 </p>
 
                 <div className="flex flex-wrap gap-2 mt-auto">
-                  {project.tags.map((tag) => (
+                  {project.tags.filter(tag => !tag.includes("Winner")).map((tag) => (
                     <span
                       key={tag}
-                      className="px-2 py-1 bg-background text-muted-foreground text-xs rounded-md font-medium border border-border/50"
+                      className="px-2.5 py-1 bg-secondary/50 text-secondary-foreground text-xs rounded-md font-medium border border-border/50 group-hover:border-primary/20 transition-colors"
                     >
                       {tag}
                     </span>

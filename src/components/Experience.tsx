@@ -66,7 +66,7 @@ const item = {
 export const Experience = () => {
   return (
     <section id="experience" className="py-20 lg:py-32 bg-secondary/30">
-      <div className="container mx-auto px-6 max-w-4xl">
+      <div className="container mx-auto px-6 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -83,52 +83,50 @@ export const Experience = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="space-y-12"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
               variants={item}
-              className="group"
+              className="group h-full"
             >
-              <div className="grid md:grid-cols-[200px_1fr] gap-4 md:gap-8">
-                {/* Date */}
-                <div className="text-muted-foreground text-sm font-mono pt-1">
-                  {exp.date}
+              <div className="flex flex-col h-full p-6 rounded-xl bg-card/50 border border-border/50 hover:border-primary/50 transition-colors duration-300 hover:shadow-lg hover:shadow-primary/5">
+                <div className="flex justify-between items-start mb-4">
+                  {exp.logo && (
+                    <img
+                      src={exp.logo}
+                      alt={`${exp.company} logo`}
+                      className="w-12 h-12 object-contain rounded-md bg-white p-1"
+                    />
+                  )}
+                  <span className="text-xs font-mono text-muted-foreground bg-secondary/50 px-2 py-1 rounded border border-border/50">
+                    {exp.date}
+                  </span>
                 </div>
 
-                {/* Content */}
-                <div>
-                  <div className="flex items-center gap-3 mb-1">
-                    {exp.logo && (
-                      <img
-                        src={exp.logo}
-                        alt={`${exp.company} logo`}
-                        className="w-8 h-8 object-contain rounded-sm bg-white p-0.5"
-                      />
-                    )}
-                    <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
-                      {exp.company}
-                    </h3>
-                  </div>
-                  <div className="text-lg text-muted-foreground mb-2">
+                <div className="mb-4">
+                  <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors mb-1">
+                    {exp.company}
+                  </h3>
+                  <div className="text-base text-muted-foreground font-medium">
                     {exp.title}
                   </div>
+                </div>
 
-                  <p className="text-muted-foreground/80 leading-relaxed mb-4">
-                    {exp.description}
-                  </p>
+                <p className="text-muted-foreground/80 text-sm leading-relaxed mb-6 flex-grow">
+                  {exp.description}
+                </p>
 
-                  <div className="flex flex-wrap gap-2">
-                    {exp.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
+                <div className="flex flex-wrap gap-2 mt-auto">
+                  {exp.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-2.5 py-1 bg-secondary/50 text-secondary-foreground text-xs rounded-md font-medium border border-border/50 group-hover:border-primary/20 transition-colors"
+                    >
+                      {tag}
+                    </span>
+                  ))}
                 </div>
               </div>
             </motion.div>
