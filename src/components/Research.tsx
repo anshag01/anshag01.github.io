@@ -6,7 +6,7 @@ const research = [
         lab: "UofT (Prof. Nick Koudas)",
         date: "09/2025 – Present",
         description: "Investigating Generative Engine Optimization (GEO) to decode AI search prioritization. Analyzing how content edits, pretraining signals, and authoritative sources in RAG systems impact visibility, fairness, and answer quality.",
-        logo: "https://logo.clearbit.com/utoronto.ca",
+        logo: "/uoft_logo.png",
     },
     {
         role: "Machine Learning Researcher",
@@ -20,7 +20,7 @@ const research = [
         lab: "MEDCVR at UofT",
         date: "08/2024 – 03/2025",
         description: "Engineered a multi-agent robotics system using VLMs & LLMs for autonomous surgery. Developed motion planning and control stacks, deploying them on a Franka Emika robot.",
-        logo: "https://logo.clearbit.com/utoronto.ca",
+        logo: "/uoft_logo.png",
         video: "https://www.youtube.com/embed/_fb3TfBmiVc",
     },
 ];
