@@ -8,7 +8,7 @@ const experiences = [
     title: "Machine Learning Intern",
     description: "I built an agentic chatbot for software-package management that plans multi-step workflows & orchestrates cross-service tool calls, delivering 90% action accuracy & $6.7M/year projected savings.",
     tags: ["Python", "RASA", "Transformers", "ChromaDB", "Docker", "AWS"],
-    logo: "https://logo.clearbit.com/autodesk.com",
+    logo: "/autodesk_logo.png",
   },
   {
     date: "09/2024 – 04/2025",
@@ -26,7 +26,7 @@ const experiences = [
     title: "Teaching Assistant",
     description: "I worked as a Teaching Assistant for CSC207 & CSC209, supporting 500+ students through labs and grading, and created a new test suite that reduced grading time by 50%.",
     tags: ["Java", "C", "JUnit", "Teaching"],
-    logo: "https://logo.clearbit.com/utoronto.ca",
+    logo: "/uoft_logo.png",
   },
   {
     date: "05/2024 – 08/2024",
@@ -35,7 +35,7 @@ const experiences = [
     title: "Software Engineering Intern",
     description: "I built the “Maintain Holiday” webpage for the Registered Products Database and authored Selenium-based regression scripts, cutting test time by 500% ($25k/yr savings).",
     tags: ["Spring Boot", "Angular", "SQL", "Selenium"],
-    logo: "https://logo.clearbit.com/td.com",
+    logo: "/td_logo.png",
   },
   {
     date: "05/2023 – 08/2023",
@@ -44,7 +44,7 @@ const experiences = [
     title: "Software Engineering Intern",
     description: "I implemented and tested iSIM features in Java to enable Airtel to monitor 100 million users, resolving 7 critical security flaws and boosting stability by 5%.",
     tags: ["Java", "Docker", "Kubernetes", "REST APIs"],
-    logo: "https://logo.clearbit.com/nokia.com",
+    logo: "/nokia_logo.png",
   },
 ];
 
