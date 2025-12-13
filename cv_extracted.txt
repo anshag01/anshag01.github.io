@@ -1,0 +1,96 @@
+Ansh Agrawal
+(cid:131) +1 (437) 679 3760 (cid:239) Ansh Agrawal
+# ansh.agrawal@utoronto.ca § anshag01
+Website: anshag01.github.io
+EDUCATION
+University of Toronto 09/2021 – 04/2026
+HBSc: Computer Science (AI) · 2× Dean’s List · CGPA 3.85/4.00 Toronto, Canada
+National University of Singapore 01/2024 – 05/2024
+Semester Exchange Program Singapore
+Coursework: Deep Learning, Operating Systems, Data Structures, Systems Programming, Artificial Intelligence,
+Machine Learning, Computer Vision, Computational Probability & Statistics.
+ACADEMIC RESEARCH
+Machine Learning Researcher 12/2024 – 03/2025
+The Matter Lab at UofT Toronto, Canada
+• Built a PySCF based workflow for a machine-learning exchange–correlation functional by extracting one &
+two-particle Reduced Density Matrices from CCSD calculations.
+• Mapped orbitals to grids & derived the exchange-correlation hole h xc from pair & electron densities.
+• Added automated checks enforcing physical sum rules so the data stayed consistent with first-principles DFT.
+LLM Robotics Researcher 08/2024 – 03/2025
+MEDCVR at UofT Toronto, Canada
+• Designed a multi-agent robotics application with VLMs & LLMs for autonomous surgical tasks.
+• Developed high-level motion planning, low-level action functions & deployed code on Franka Emika robot.
+WORK EXPERIENCE
+Machine Learning Intern 05/2025 – 08/2025
+Autodesk Toronto, Canada
+• Built an agentic chatbot for software-package management that plans multi-step workflows (create, edit, find, &
+delete) & orchestrates cross-service tool calls, delivering 90% action accuracy & $6.7M/year projected customer
+savings at rollout.
+• Implemented RAG-powered semantic search for find feature across 1000+ package configs with 10× faster lookups.
+• Added JWT feature flag to switch between hard-coded roles & 3-legged token, enabling safe staged migration.
+Software Engineering Intern 09/2024 – 04/2025
+Thomson Reuters Toronto, Canada
+• Resolved 20 production issues & migrated C# backend services, improving platform stability by 15%.
+• Managed monthly releases, cherry-picking cross-functional changes, ensuring 98% on-time delivery.
+• Developed 25 SQL scripts to fix bugs & deliver features for 20,000 customers across seven environments.
+Teaching Assistant 09/2024 – 04/2025
+University of Toronto Toronto, Canada
+• TAed CSC207 (Software Design) & CSC209 (Systems Programming); supported 500+ students
+through labs, grading, & office hours.
+• Created adventure game 2 assignment for CSC207 & test suite, reducing grading time by 50%.
+Software Engineering Intern 05/2024 – 08/2024
+TD Bank Toronto, Canada
+• Built “Maintain Holiday” webpage for Registered Products Database using Spring Boot & Angular.
+• Authored Selenium-based regression scripts, cutting test time by 500% & providing $25,000/year savings.
+Software Engineering Intern 05/2023 – 08/2023
+Nokia Toronto, Canada
+• Implemented & tested iSIM features in Java, enabling Airtel to monitor 100 million users.
+• Resolved 100 code issues & 7 critical security flaws, boosting performance & stability by 5%.
+SKILLS
+Languages: Python, C#, Java, C, SQL, JavaScript
+Frameworks: Spring Boot, .NET (Core), Angular
+Tools: AWS, Git, Docker, Kubernetes, PostgreSQL, REST API, Selenium
+Machine Learning: PyTorch, Scikit-learn, NumPy, OpenCV, RAG
+PUBLICATIONS
+• A. Agrawal, “From Attention to Application: The Evolution of Transformer Models & Their Impact on
+Modern Healthcare & Cancer Research,” submitted to J. Mach. Learn. Res., 2025.
+PROJECTS
+Aegis - TreeHacks 2025 2 02/2025
+• Built a multimodal edge-ML system using Apple Watch & Terra biometrics with NVIDIA
+Jetson–deployed VILA models to infer firefighters’ state & trigger actuator-controlled medication.
+ReCall.ai - HackPrinceton 2024 Winner 2 12/2024
+• Built smart glasses that use facial recognition to identify conversation partners & LLMs to summarize past
+interactions with them. Won the Patient Safety Challenge & Diagnosis Consort among 100 teams.
+Watchful.AI - PennApps XXV Hackathon Winner 2 09/2024
+• Developed an AI safety system using CLIP, VLMs, & a vector database to analyze CCTV feeds for
+weapon-related threats & alert campus security in real time. Won Best Privacy/Security Hack & Most
+Technically Complex Hack among 104 teams.
+EXTRACURRICULARS & LEADERSHIP
+Director of Sponsorship 05/2025 – Present
+UofT AI 2 Toronto, Canada
+• Currently Lead a 20-member team to raise CAD 40,000 in sponsorships for ConferenceX, Canada’s largest
+undergraduate AI conference.
+• Managing outreach, mentoring members, & meeting with sponsors to negotiate & close sponsorship deals.
+Competitive Programming 09/2025 – 11/2025
+International Collegiate Programming Contest Toronto, Canada
+• Represented UofT at the ICPC North America East Central Regional.
+Hackathon Judge & Mentor 05/2025 – 08/2025
+Independent Judge & Mentor Toronto, Canada
+• Judged & mentored teams at Hack404 & Ignition Hacks 2, guiding students on ML, system architecture, &
+their projects.
+Founder & CEO 05/2025 – 08/2025
+ClearSite.ai Toronto, Canada
+• Founded an accessibility startup & got selected for CAD 150,000 in pre-seed funding at UofT’s Hatchery.
+• Built tools that detect accessibility issues in websites & generate automated fixes.
+Machine Learning Technical Writer 09/2024 – 04/2025
+UofT Machine Intelligence Student Team 2 Toronto, Canada
+• Wrote & edited machine learning articles for the UofT ML community.
+AWARDS
+• University of Toronto International Scholar (CAD 180,000) - Awarded to top 3% international admits.
+• University of Toronto Principal’s Entry (CAD 12,000) - Merit based academic award.
+• University of Toronto Scholar (CAD 7,500) - Awarded to outstanding students upon admission.
+• University of Toronto International Experience Award (CAD 6,000) - Funding for semester abroad at NUS.
+• PennApps XXV - Best Privacy/Security Hack & Most Technically Complex Hack.
+• HackPrinceton - Diagnosis Consort by BGB Group & Patient Safety Challenge.
+• UofTHacks X - Co:Here Best Build with Cohere Challenge.
+• DeerHacks - Best Usage of UiPath Products.

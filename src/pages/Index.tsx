@@ -4,6 +4,7 @@ import { Skills } from "@/components/Skills";
 import { Experience } from "@/components/Experience";
 import { Research } from "@/components/Research";
 import { Projects } from "@/components/Projects";
+import { Extracurriculars } from "@/components/Extracurriculars";
 import { Contact } from "@/components/Contact";
 
 const Index = () => {
@@ -16,6 +17,7 @@ const Index = () => {
         <Research />
         <Projects />
         <Skills />
+        <Extracurriculars />
         <Contact />
       </main>
       <footer className="border-t border-border py-8">
